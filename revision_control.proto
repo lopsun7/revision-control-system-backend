@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package proj;
+
+option go_package = "/Users/lopsun/Documents/317/proj";
+
+service RevisionControl {
+  rpc CommitFile(CommitRequest) returns (CommitResponse);
+  rpc GetFile(GetRequest) returns (GetResponse);
+}
+
+message CommitRequest {
+  string filename = 1;
+  string content = 2;
+}
+
+message CommitResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+message GetRequest {
+  string filename = 1;
+}
+
+message GetResponse {
+  string content = 1;
+  bool success = 2;
+  string message = 3;
+}
