@@ -1,4 +1,4 @@
-module proj
+module revision_control_system_backend
 
 go 1.22
 
