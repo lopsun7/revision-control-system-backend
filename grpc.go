@@ -1,10 +1,10 @@
-package revision_control_system_backend
+package main
 
 import (
 	"context"
 	"encoding/json"
 	"github.com/hashicorp/raft"
-	pb "revision_control_system_backend/pb"
+	pb "revision-control-system-backend/pb"
 )
 
 type server struct {

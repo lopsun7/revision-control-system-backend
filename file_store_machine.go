@@ -1,4 +1,4 @@
-package revision_control_system_backend
+package main
 
 import (
 	"encoding/json"
